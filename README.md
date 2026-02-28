@@ -1,3 +1,8 @@
+
+**Longiy Tsin & Wyatt Smith**
+
+**Run c(main). main:start().**
+
 In this assignment we will write an Erlang program that spawns several processes to cooperatively solve the problem.
 
 Write an Erlang program that will use the "send_recv" module we discusses in the video as a pattern or guide. You will write a chain of 3 "servers" which are processes that are in a chain communication pattern. Lets call for this discussion the servers serv1, serv2, and serv3. The head of the chain is serv1, which will be communicating with serv2; serv2 will communicate with serv3. The serv1 process will receieve messages (from the main function) and possibly send what it received on to serv2. The serv2 process will receieve messages from serv1 and possibly send what it received on to serv3; likewise, the serv3 process will receieve messages from serv2 but will not send any messages onward.
